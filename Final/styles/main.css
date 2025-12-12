@@ -1,0 +1,256 @@
+
+body{
+    background-color: plum;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 50px;
+}
+hr{
+    border: none;
+    border-top: 10px solid white;
+
+}
+#nav_menu ul { /*nav menu style*/
+     list-style-type: none; padding: 1em 0;
+     font-size: 2.0em;
+     text-align: center;
+     } 
+#nav_menu ul li {  /*nav menu style*/
+    display: inline; 
+    padding: 0 1em; } 
+#nav_menu ul li a {  /*nav menu style*/
+    font-weight: bold; 
+    color: plum; }
+#nav_menu ul li a.current { /*nav menu style, current page color*/
+    color: purple;
+ }
+ #mobile_menu ul li a{ /*mobile menu style*/
+    color: plum;
+ }
+ .box{
+    border: 10px solid white;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+ }
+ form{
+    text-align: center;
+ }
+ h2{
+    text-align: center;
+    color: white;
+ }
+   a[download] {
+    color: white;
+    background-color: purple;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;      
+
+}
+a[download]:hover {
+    background-color: darkviolet;
+}
+.download-center {
+    text-align: center;
+}
+@media only screen and (max-width : 2024px){ /*for screens <=2024*/
+    #mobile_menu{
+        display:none;
+    }
+}
+@media only screen and (max-width: 959px){ /*for screens <=959*/
+    #mobile_menu{
+        display:none;
+    }
+}
+@media only screen and (max-width: 768px) { /*Make it flex to fit smaller screens*/
+    .bike-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    #mobile_menu {
+        display: block;
+
+    }
+    #nav_menu{
+        display:none;
+    }
+}
+@media only screen and (max-width: 479px){ /*for screens <=479*/
+    #mobile_menu{
+        display:block;
+    }
+    #nav_menu{
+        display:none;
+    }
+}
+
+ .slicknav_btn { /*mobile menu style*/
+    background: purple !important;
+    color: black !important;
+ }
+ .slicknav_icon-bar{ /*mobile menu style*/
+    background-color: white !important;
+ }
+
+ .slicknav_menu { /*mobile menu style*/
+    background-color: white !important;
+    padding: 5px;
+ }
+ .slicknav_nav a { /*mobile menu style*/
+    background: purple;
+ }
+ .slicknav_nav { /*mobile menu style*/
+    background: white;
+    border: 5px solid plum
+ }
+ #survey-output {
+    text-align: center; 
+    color: white;
+}
+
+.table-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.table-container table {
+    width: 100%;
+    max-width: 470px;
+    table-layout: auto; 
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    height: auto; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+
+caption {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .table-container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .table-container table {
+        max-width: 90%; 
+    }
+}
+
+
+
+.right-table td {
+    text-align: center;
+}
+h2, h3, ul, li, p {
+    color: white;
+}
+h2{
+    font-family: 'Satisfy', cursive;   
+}
+
+
+img {
+    width: 80%;          
+    max-width: 300px;    
+    height: auto;
+    display: block;
+}
+
+
+.image-wrapper, .video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.image-hover {
+    position: relative;
+    width: 80%;        
+    max-width: 300px;
+    aspect-ratio: 3/2;   
+}
+
+.image-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-img {
+    opacity: 0;
+}
+
+.image-hover:hover .hover-img {
+    opacity: 1;
+}
+
+.image-hover:hover .default-img {
+    opacity: 0;
+}
+
+
+.video-wrapper video {
+    width: 80%;        
+    max-width: 640px;    
+    height: auto;
+    display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+    img, .image-hover, .video-wrapper video {
+        width: 95%;      
+        height: auto;
+    }
+}
+.float-img {
+    float: left;           
+    margin: 0 15px 15px 0; 
+    width: 300px;
+    height: auto;
+}
+.home-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+
